@@ -100,7 +100,7 @@ app.post("/api/user/login",(req,res,next)=>{
                 username:fetchedUser.username, 
                 userid: fetchedUser._id
             }, 
-            "MyKey"
+            APP_KEY
         );//creates a new token
         
         res.status(200).json({
