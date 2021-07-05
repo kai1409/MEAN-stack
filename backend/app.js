@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const checkAuth = require('./middleware/check-auth');
 
-mongoose.connect("mongodb+srv://kasturi:bOnhykCpXHKVNyY8@cluster0.jcf1t.mongodb.net/meanStackProject?retryWrites=true&w=majority", {
+mongoose.connect(APP_URL, {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 }).then(()=>{
